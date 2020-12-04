@@ -6,8 +6,8 @@ import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 
-@DisplayName("Day 03")
-class Day03Test {
+@DisplayName("Day 04")
+class Day04Test {
 
     @Nested
     @DisplayName("Part 1")
@@ -15,25 +15,25 @@ class Day03Test {
         @Test
         fun `Matches example`() {
             // Given
-            val input = Resources.resourceAsString("examples/day3.txt",",")
+            val input = Resources.resourceAsStringSplitByNewline("examples/day4.txt",",")
 
             // When
-            val answer = Day03(input).solvePart1()
+            val answer = Day04(input).solvePart1()
 
             // Then
-            assertThat(answer).isEqualTo(7)
+            assertThat(answer).isEqualTo(8)
         }
 
         @Test
         fun `Actual answer`() {
             // Given
-            val input = Resources.resourceAsString("day3.txt",",")
+            val input = Resources.resourceAsStringSplitByNewline("day4.txt",",")
 
             // When
-            val answer = Day03(input).solvePart1()
+            val answer = Day04(input).solvePart1()
 
             // Then
-            assertThat(answer).isEqualTo(171)
+            assertThat(answer).isEqualTo(245)
         }
     }
 
@@ -43,25 +43,25 @@ class Day03Test {
         @Test
         fun `Matches example`() {
             // Given
-            val input = Resources.resourceAsString("examples/day3.txt",",")
+            val input = Resources.resourceAsStringSplitByNewline("examples/day4.txt",",")
 
             // When
-            val answer = Day03(input).solvePart2()
+            val answer = Day04(input).solvePart2()
 
             // Then
-            assertThat(answer).isEqualTo(336)
+            assertThat(answer).isEqualTo(4)
         }
 
         @Test
         fun `Actual answer`() {
             // Given
-            val input = Resources.resourceAsString("day3.txt",",")
+            val input = Resources.resourceAsStringSplitByNewline("day4.txt",",")
 
             // When
-            val answer = Day03(input).solvePart2()
+            val answer = Day04(input).solvePart2()
 
             // Then
-            assertThat(answer).isEqualTo(1206576000)
+            assertThat(answer).isEqualTo(133)
         }
     }
 }
