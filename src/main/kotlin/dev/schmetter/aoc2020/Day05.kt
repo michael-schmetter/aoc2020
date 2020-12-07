@@ -2,7 +2,6 @@ package dev.schmetter.aoc2020
 
 import kotlin.math.ceil
 import kotlin.math.floor
-import kotlin.math.roundToInt
 
 class Day05(input: String) {
     private var boardingpasses = input.split(",")
