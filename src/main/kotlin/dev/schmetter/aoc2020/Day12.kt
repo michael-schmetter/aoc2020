@@ -2,9 +2,9 @@ package dev.schmetter.aoc2020
 
 import kotlin.math.absoluteValue
 
-data class Inst(var op: Char, val arg: Int)
 
 class Day12(input: String) {
+    data class Inst(var op: Char, val arg: Int)
 
     private var instructions = input.split(",").map { Inst(it[0], it.substring(1).toInt()) }
 
